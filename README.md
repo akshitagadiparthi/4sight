@@ -1,36 +1,76 @@
-**AI-Powered Email Automation for Job Applications**
-- **Project Overview**
-- This project automates job application email management using AI-powered analysis and Gmail API integration. By leveraging multiple large language models (LLMs) and Google Cloud's OAuth 2.0 authentication, the system streamlines interactions with recruiters by analyzing incoming emails, sending automated responses with resumes, and organizing messages into designated folders.
-- This project simplifies job search email management by integrating AI-based decision-making with automated email handling. Whether responding to recruiters, organizing emails, or optimizing workflow tracking, the system enhances productivity and ensures seamless communication.
+# **AI-Powered Email Automation for Job Applications**
 
-- **Key Features**
--1. Automated Email Processing
-Uses the Gmail API to read and categorize incoming recruiter emails.
-Extracts relevant details using AI and determines appropriate actions.
-2. AI-Powered Resume Replies
-Automatically generates and sends recruiter responses with the applicant’s resume attached.
-Uses different LLMs (OpenAI, Anthropic, and Google) to enhance analysis and improve email response quality.
-3. Smart Email Organization
-Moves processed emails into categorized folders for better inbox management.
-Ensures that recruiter communications are easily accessible.
-4. Multi-Model Support & Performance Tracking
-Three separate AI-driven Analyze Scripts allow switching between OpenAI, Anthropic, and Google LLMs.
-A specialized LangSmith-integrated script enables tracing and performance monitoring of AI responses.
-5. Task Automation with CrewAI
-The crew_ai.py script orchestrates AI-driven workflows to manage multiple email-related tasks efficiently.
-Technical Setup
-1. Environment Configuration
-.env file setup for secure environment variable management, based on .env_sample.
-Google Cloud OAuth 2.0 authentication with a downloaded client_secret.json.
-Upon first-time initialization, the Gmail class generates a gmail_token.json file for authentication persistence.
-2. Dependency Management
-Install required dependencies using:
-bash
-Copy
-Edit
+## **Overview**
+This project automates job application email management using AI-powered analysis and Gmail API integration. It streamlines interactions with recruiters by analyzing incoming emails, sending automated responses with resumes, and organizing messages into designated folders.
+
+## **Features**
+
+### ✅ Automated Email Processing
+- Reads and categorizes recruiter emails using the Gmail API.
+- Extracts relevant details and determines the appropriate action using AI.
+
+### 📩 AI-Powered Resume Replies
+- Generates personalized recruiter responses with an attached resume.
+- Supports multiple LLMs (OpenAI, Anthropic, Google) for enhanced analysis and response quality.
+
+### 🗂 Smart Email Organization
+- Moves processed emails into categorized folders for better inbox management.
+- Ensures easy access to recruiter communications.
+
+### 🔍 Multi-Model Support & Performance Tracking
+- Three AI-powered **Analyze Scripts** allow switching between OpenAI, Anthropic, and Google LLMs.
+- An additional **LangSmith-integrated script** enables tracing and performance monitoring of AI responses.
+
+### 🤖 Task Automation with CrewAI
+- The `crew_ai.py` script orchestrates AI-driven workflows to manage multiple email-related tasks efficiently.
+
+---
+
+## **Setup & Installation**
+
+### **1. Environment Configuration**
+- Create an `.env` file in the root directory based on `.env_sample`.
+- Set up Gmail API via Google Cloud and download `client_secret.json`.
+- Upon first-time initialization, the `Gmail` class will generate a `gmail_token.json` for authentication persistence.
+
+### **2. Install Dependencies**
+Run the following command to install required packages:
+```bash
 pip install -r requirements.txt
-Use Cases & Benefits
-Job Seekers: Automates recruiter communication, reducing manual email handling.
-Recruitment Professionals: Organizes candidate emails efficiently for better tracking.
-AI Enthusiasts & Developers: Demonstrates practical AI-driven workflow automation.
+```
 
+---
+
+## **Usage**
+
+### **Running the Email Automation**
+```bash
+python analyze_script.py  # Choose from OpenAI, Anthropic, Google, or LangSmith versions
+```
+
+### **Running CrewAI Task Automation**
+```bash
+python crew_ai.py
+```
+
+---
+
+## **Use Cases & Benefits**
+- **Job Seekers**: Automates recruiter communication, reducing manual email handling.
+- **Recruitment Professionals**: Organizes candidate emails efficiently for better tracking.
+- **AI Enthusiasts & Developers**: Demonstrates practical AI-driven workflow automation.
+
+---
+
+## **Contributing**
+Contributions are welcome! Feel free to submit a pull request or open an issue.
+
+---
+
+## **License**
+This project is licensed under the MIT License.
+
+---
+
+## **Author**
+Developed by [Akshita Gadiparthi]. 
