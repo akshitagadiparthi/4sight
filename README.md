@@ -1,9 +1,9 @@
--- **AI-Powered Email Automation for Job Applications**
+**AI-Powered Email Automation for Job Applications**
 - **Project Overview**
 - This project automates job application email management using AI-powered analysis and Gmail API integration. By leveraging multiple large language models (LLMs) and Google Cloud's OAuth 2.0 authentication, the system streamlines interactions with recruiters by analyzing incoming emails, sending automated responses with resumes, and organizing messages into designated folders.
--This project simplifies job search email management by integrating AI-based decision-making with automated email handling. Whether responding to recruiters, organizing emails, or optimizing workflow tracking, the system enhances productivity and ensures seamless communication.
+- This project simplifies job search email management by integrating AI-based decision-making with automated email handling. Whether responding to recruiters, organizing emails, or optimizing workflow tracking, the system enhances productivity and ensures seamless communication.
 
--**Key Features**
+- **Key Features**
 -1. Automated Email Processing
 Uses the Gmail API to read and categorize incoming recruiter emails.
 Extracts relevant details using AI and determines appropriate actions.
