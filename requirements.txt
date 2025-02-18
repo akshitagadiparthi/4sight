@@ -1,0 +1,12 @@
+crewai
+interpreter
+langchain
+langchain_openai
+dotenv
+simplegmail
+langchain_tools
+crewai_tools
+openai
+google-generativeai
+os
+re
